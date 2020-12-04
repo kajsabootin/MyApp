@@ -17,7 +17,7 @@ const AllMovieScreen = ({navigation}) => {
         "method": "GET",
 	      "headers": {
 		    "x-rapidapi-Key": "",
-	  	  "x-rapidapi-host": "movie-database-imdb-alternative.p.rapidapi.com"
+	  	  "x-rapidapi-host": ""
       }
     })
     .then(response => {
