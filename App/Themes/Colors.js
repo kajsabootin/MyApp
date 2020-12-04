@@ -21,7 +21,11 @@ const colors = {
   eggplant: '#251a34',
   border: '#483F53',
   banner: '#5F3E63',
-  text: '#E0D7E5'
+  text: '#E0D7E5',
+  hej: '#eeeeee', // vit
+  hejhej: '#222831', // svart
+  hejsan: '#393e46', // grå
+  duda: '#00adb5', // blå
 }
 
 export default colors

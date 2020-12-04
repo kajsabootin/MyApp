@@ -10,7 +10,7 @@ import ExamplesRegistry from '../Services/ExamplesRegistry'
 
 // Ignore in coverage report
 /* istanbul ignore next */
-ExamplesRegistry.addComponentExample('Rounded Button', () =>
+/* ExamplesRegistry.addComponentExample('Rounded Button', () =>
   <RoundedButton
     text='real buttons have curves'
     onPress={() => window.alert('Rounded Button Pressed!')}
@@ -37,4 +37,17 @@ export default class RoundedButton extends Component {
       </TouchableOpacity>
     )
   }
+} */
+
+const RoundedButton = ({navigation, onPress}) => {
+  console.log(navigation)
+  console.log(onPress)
+
+  return (
+    <TouchableOpacity style={styles.button} onPress={onPress}>
+        <Text style={styles.buttonText}>{/* {this.getText()} */}</Text>
+      </TouchableOpacity>
+    )
 }
+
+export default RoundedButton;

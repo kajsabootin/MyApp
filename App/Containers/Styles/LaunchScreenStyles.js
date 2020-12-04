@@ -1,10 +1,12 @@
 import { StyleSheet } from 'react-native'
-import { Metrics, ApplicationStyles } from '../../Themes/'
+import { Metrics, ApplicationStyles, Fonts, Colors } from '../../Themes/'
 
 export default StyleSheet.create({
   ...ApplicationStyles.screen,
   container: {
-    paddingBottom: Metrics.baseMargin
+    paddingBottom: Metrics.baseMargin,
+    /* backgroundColor: 'pink' */
+    backgroundColor: Colors.hej
   },
   logo: {
     marginTop: Metrics.doubleSection,
