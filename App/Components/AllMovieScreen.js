@@ -9,8 +9,6 @@ import { View, ScrollView, Text, Image, TouchableOpacity } from 'react-native'
 const AllMovieScreen = ({navigation}) => {
   console.log(navigation)
 
-  //804b9490c0msh6f9a9c1ebe788bcp1ba8c8jsnd3dc63b73402
-
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -18,7 +16,7 @@ const AllMovieScreen = ({navigation}) => {
       "https://movie-database-imdb-alternative.p.rapidapi.com/?s=Avengers%20Endgame&page=1&r=json", {
         "method": "GET",
 	      "headers": {
-		    "x-rapidapi-Key": "804b9490c0msh6f9a9c1ebe788bcp1ba8c8jsnd3dc63b73402",
+		    "x-rapidapi-Key": "",
 	  	  "x-rapidapi-host": "movie-database-imdb-alternative.p.rapidapi.com"
       }
     })
@@ -37,8 +35,8 @@ const AllMovieScreen = ({navigation}) => {
       "https://movie-database-imdb-alternative.p.rapidapi.com/?s=Avengers%20Endgame&page=1&r=json", {
         "method": "GET",
 	      "headers": {
-		    "x-rapidapi-key": "804b9490c0msh6f9a9c1ebe788bcp1ba8c8jsnd3dc63b73402",
-	  	  "x-rapidapi-host": "movie-database-imdb-alternative.p.rapidapi.com"
+		    "x-rapidapi-key": "",
+	  	  "x-rapidapi-host": ""
       }
       })
       .then((res) => res.json())
